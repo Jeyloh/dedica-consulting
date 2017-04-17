@@ -1,0 +1,43 @@
+<div ng-controller="ArticleController" class="row page-article" >
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <label>Endre layout: <input type="checkbox" ng-model="checked" ng-init="checked=true" /></label><br/>
+        <div ng-if="checked">
+            <h2 class="h2-responsive"><i class="fa fa-building" aria-hidden="true"></i> {{content.articleTitle}} </h2>
+            <hr>
+            <ul>
+                <p><li><i class="fa fa-cog" aria-hidden="true"></i>
+                {{content.articleText}}
+            </li></p>
+                <p><li><i class="fa fa-cog" aria-hidden="true"></i>
+                {{content.articleText}}
+            </li></p>
+            </ul>
+            <a href="" class="btn btn-primary">Lær mer!</a>
+            <a href="https://www.quora.com/What-is-a-hackathon">Hva er dette?</a>
+        </div>
+        <div ng-if="!checked">
+            <div class="row ">
+                <div class="col-md-4 no-margin-padding">
+                    <img src="http://placehold.it/295x385" class="img-fluid img-responsive " alt="">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="h2-responsive"><i class="fa fa-code" aria-hidden="true"></i> Hackathons</h2>
+                    <hr>
+                    <ul>
+                        <p><li><i class="fa fa-check" aria-hidden="true"></i>
+                        Vi ønsker å arrangere “Hackathons” som en tjeneste for bedrifter. Bedriften kjøper seg inn for et hackathon. Arrangeres med fokus på idémyldring og utvikling av produkter innenfor bedriftens ønsker. Kommer med komplett tema, arrangement, premier og datasett mot en sum fra bedriften.
+                    </li></p>
+                        <p><li><i class="fa fa-check" aria-hidden="true"></i>
+                        Om ikke det går: Ansett IT studenter som hjelpelærere for Lærerstudenter, slik at kompetansen kan bli spredd.
+                        IT studenter vil ha stor gevinst å lære vekk kunnskapen for egen læring.
+                        Lærer studenter vil få en mild introduksjon til programmering, noe som garantert vil være i ungdomsskolepensum ila. 10 år!!
+                    </li></p>
+                        <a href="https://www.quora.com/What-is-a-hackathon">Hva er Hackathon?</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+</div>

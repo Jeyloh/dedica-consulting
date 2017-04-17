@@ -1,0 +1,45 @@
+<div  id="engage-form-id" class="card engage-form z-depth-2">
+    <div class="card-block">
+        <i class="fa fa-close" onclick="displayForm()"></i>
+        <div class="text-center">
+            <h2 class="h2-responsive">Spørsmål?</h2>
+            <p>Jeg tar webutvikling og design oppdrag!</p>
+            <hr class="mt-2 mb-2 white">
+        </div>
+        <form id="engage-form">
+            <div class="md-form">
+                <i class="fa fa-user prefix"></i>
+                <input type="text" id="nameInput" class="form-control" validate>
+                <label for="nameInput" data-error="feil" data-success="riktig">Ditt navn<label>
+            </div>
+            <div class="md-form">
+                <i class="fa fa-envelope prefix"></i>
+                <input type="email" id="mailInput" class="form-control" validate>
+                <label for="mailInput" data-error="feil" data-success="riktig">Your email</label>
+            </div>
+            <div class="md-form">
+                <i class="fa fa-pencil prefix"></i>
+                <label for="descriptionArea">Hva ønsker du? :)</label>
+                <textarea class="md-textarea" id="descriptionArea"></textarea>
+            </div>
+<!--        <label for="role">Hvem er du?</label>
+            <div class="md-form white">
+                <select class="form-control" id="role">
+                    <option id="it-competent">IT Student</option>
+                    <option id="teacher">Lærer Student</option>
+                    <option id="engagement">Engasjert i å hjelpe!</option>
+                    <option id="parent">Foreldre</option>
+                    <option id="young">Ung og interessert!</option>
+                </select>
+            </div>-->
+            <div class="text-center">
+                <button onclick="writeFormData(nameInput, mailInput, role, descriptionArea)" type="submit" class="btn btn-primary">Send!</button>
+            </div>
+            <br />
+            <div class="progress">
+                <div class="progress-bar bg-primary" id="form-progress" role="progressbar" style="width: 25%; height: 2px;" aria-valuenow={progress} aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+    </div>
+    </form>
+
+</div>

@@ -1,0 +1,203 @@
+/* YOUR CUSTOM STYLES */
+
+.subcategory-box {
+    height: 15em;
+    width: 100%;
+    color: #fff !important;
+    pointer-events: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: .2s ease-out;
+    white-space: normal !important;
+    text-transform: uppercase;
+    cursor: pointer;
+} .subcategory-box a {color:white;}
+
+
+
+.custom-header {
+    height: 80px;
+}
+
+.page-article{
+    padding: 2em;
+    min-height: 200px;
+}
+.no-margin-padding{
+    margin: 0;
+    padding: 0;
+}
+main:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    top: auto;
+    bottom: auto;
+    justify-content: center;
+}
+footer.page-footer {
+    margin-top:0;
+}
+
+.header-logo {
+    width:80px;
+    height: 80px;
+}
+.card-krs{
+    justify-content: center;
+    align-items: center;
+    border-left: solid 1px black;
+    margin-right: 1em;
+    word-wrap: break-word;
+}
+.card-krs .avatar img {
+    height: 100px;
+    width: 100px;
+}
+.fixed-right {
+    position: fixed;
+    right: 0;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    z-index: 99999;
+}
+.engage-form-btn {
+    height: 10em;
+    width: 3em;
+    background-color: rgb(186, 241, 193);
+    color: white;
+}
+
+.banner-wrapper {
+    margin: 2em 0;
+    position: relative;
+    border: 1px solid black;
+} .banner-wrapper .div-link {
+      position:absolute;
+      width:100%;
+      height:100%;
+      top:0;
+      left: 0;
+      z-index: 1;
+  }
+
+.engage-form{
+    margin: 2em auto;
+    width: 60%;
+    color: #fff;
+    background-color: rgb(64, 64, 64);
+}
+.engage-form .md-form input, .engage-form .md-form textarea, .engage-form .md-form label {
+    color: #fff;
+}
+
+.abstract-background {
+    background: url(./../img/abstract-bck.jpg);
+    color: white;
+    opacity: 0.8;
+}
+
+.social [class*="fa fa-"] {
+    background-color: #333;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    margin: auto 3px;
+    width: 60px;
+    font-size: 30px;
+    text-align: center;
+    transition: .5s;
+}.fa-facebook:hover {
+    background-color: rgb(34, 42, 249);
+}.fa-github:hover {
+    background-color: rgb(171, 171, 171);
+}.fa-linkedin:hover {
+    background-color: rgb(75, 93, 255);
+}.fa-instagram:hover {
+    background-color: rgb(175, 0, 144);
+}
+.social-bar {
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+    height: 3em;
+}
+.large-social{
+    height: 3em;
+    width: 3em;
+}
+.green-stripes {
+    background-color: rgb(127, 164, 14);
+    background: repeating-linear-gradient(
+      45deg,
+      rgb(127, 164, 14),
+      rgb(127, 164, 14) 5px,
+      rgb(147, 173, 68) 5px,
+      rgb(147, 173, 68) 10px
+    );
+}
+
+.purple-stripes {
+    background-color: rgb(103, 14, 164);
+    background: repeating-linear-gradient(
+      45deg,
+      rgb(103, 14, 164),
+      rgb(103, 14, 164) 5px,
+      rgb(108, 48, 149) 5px,
+      rgb(108, 48, 149) 10px
+    );
+}
+
+.yellow-stripes {
+    background-color: rgb(242, 211, 0);
+    background: repeating-linear-gradient(
+      45deg,
+      rgb(242, 211, 0),
+      rgb(242, 211, 0) 5px,
+      rgb(241, 218, 64) 5px,
+      rgb(241, 218, 64) 10px
+    );
+}
+
+.gray {
+    background-color: rgb(212, 212, 212);
+}
+
+.white-text {
+    color: white;
+}
+
+
+/*Parallax section*/
+#section-1 {
+    z-index: 1;
+    color: #000;
+    height: 100vh;
+}
+#section-1 .row {
+    position: fixed;
+}
+/*Parallax background*/
+#section-1 .parallax-layer-back {
+    background: url("https://mdbootstrap.com/images/proffesions/slides/socialmedia/img%20(2).jpg")no-repeat center center;
+    background-color: blue;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*Section with dummy content*/
+#section-2 {
+    z-index: 2;
+    position: relative;
+    background: #fff;
+    width: 100%;
+}

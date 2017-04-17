@@ -1,0 +1,103 @@
+
+
+.space-around-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.homepage-video-splash {
+    margin-top: 50px;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #00acc1;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.consultant-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+.consultant-container {
+    width: 20rem;
+    min-height: 30rem;
+    background-color: #00b8d4;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+    flex-grow: 0;
+
+}
+.consultant-container .consultant-bio {
+
+}
+
+.view {
+    background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(54).jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.homepage-video-splash h1 {
+    position: absolute;
+    top: 400px;
+    color: black;
+    font-weight: 900;
+    padding: 20px 5px 20px 120px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: right;
+
+
+}
+
+.consultant-background {
+    background-color: #ffc400;
+    color: white;
+}
+
+.padding-1{
+    padding: 1em;
+}
+
+.border-right-test {
+    border-right: 2px solid #00b8d4;
+}
+
+.partner-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+.partner-container {
+    background-color: #00b8d4;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+    flex-grow: 0;
+    flex-basis: 200px;
+    border-radius: 20px;
+
+}.partner-container img {
+     width: 200px;
+     height: 200px;
+ }

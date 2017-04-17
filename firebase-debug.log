@@ -1,0 +1,74 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\bin\firebase deploy
+[debug] CLI Version:  3.5.0
+[debug] Platform:     win32
+[debug] Node Version: v7.6.0
+[debug] Time:         Thu Apr 06 2017 22:09:28 GMT+0200 (W. Europe Summer Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/H-hdXv6XLNxwe6fcAyC7VA-o_ainnXXE5niRndV6GDc',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Apr 06 2017 22:09:28 GMT+0200 (W. Europe Summer Time)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/portfolio-jorgen  
+ Thu Apr 06 2017 22:09:33 GMT+0200 (W. Europe Summer Time)
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/portfolio-jorgen/tokens  
+ Thu Apr 06 2017 22:09:35 GMT+0200 (W. Europe Summer Time)
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-jorgen'...
+[info] 
+[info] i  deploying database, functions, hosting
+[info] +  database: rules ready to deploy.
+[debug] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "firebase-admin": "^4.1.2",
+    "firebase-functions": "^0.5"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/portfolio-jorgen?view=CONSUMER_VIEW  
+ Thu Apr 06 2017 22:09:51 GMT+0200 (W. Europe Summer Time)
+[debug] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/portfolio-jorgen?view=CONSUMER_VIEW  
+ Thu Apr 06 2017 22:09:51 GMT+0200 (W. Europe Summer Time)
+[debug] <<< HTTP RESPONSE 200
+[info] +  runtimeconfig: all necessary APIs are enabled
+[debug] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/portfolio-jorgen  
+ Thu Apr 06 2017 22:10:17 GMT+0200 (W. Europe Summer Time)
+[debug] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/portfolio-jorgen/apiKeys  
+ Thu Apr 06 2017 22:10:17 GMT+0200 (W. Europe Summer Time)
+[debug] <<< HTTP RESPONSE 200
+[debug] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/portfolio-jorgen/configs  
+ Thu Apr 06 2017 22:10:55 GMT+0200 (W. Europe Summer Time)
+[debug] <<< HTTP RESPONSE 200
+[debug] > [functions] runtime config materialized as: {
+  "firebase": {
+    "databaseURL": "https://portfolio-jorgen.firebaseio.com",
+    "storageBucket": "portfolio-jorgen.appspot.com",
+    "apiKey": "AIzaSyBtEyK7jgSAGAvIqaUUBHT1pdNrAhIjPKA",
+    "authDomain": "portfolio-jorgen.firebaseapp.com"
+  }
+}
+[debug] > [functions] parsed triggers: []
+[info] i  hosting: preparing ./app/ directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/portfolio-jorgen/uploads/-Kh3svxU4YjjlWRiw05N?fileCount=191&message=  
+ Thu Apr 06 2017 22:11:02 GMT+0200 (W. Europe Summer Time)
+[debug] Error: write ECONNRESET
+    at exports._errnoException (util.js:1028:11)
+    at WriteWrap.afterWrite [as oncomplete] (net.js:804:14)
+[error] 
+[error] Error: Server Error. write ECONNRESET
